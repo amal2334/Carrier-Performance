@@ -7,10 +7,13 @@ This project focuses on building a predictive decision-support system for Apex M
 Apex Manufacturing relies on multiple third-party logistics (3PL) carriers to ship goods across APAC, EMEA, and AMER. Each carrier operates under a Service Level Agreement (SLA) that specifies contractual delivery times.
 The Problem
 Rising Costs: SLA breaches result in 10%–20% penalty costs and customer churn.
+
 Reactive Operations: Current monitoring relies on monthly scorecards that are backward-looking and poor at detecting early performance degradation.
+
 Core Question: "Which carrier is likely to breach SLA in upcoming shipments, on which routes, and why?".
-Expected Impact
+##### Expected Impact
 SLA Breaches: Targeted reduction of 15–30%.
+
 Penalty Costs: Targeted reduction of 10–20%.
 ## Project Objectives
 The primary goal is to implement a predictive, explainable, and scalable platform that:
@@ -40,6 +43,9 @@ Modeling: Training and evaluating classification models (Random Forest, XGBoost)
 Trustable AI: Utilizing SHAP values to provide business-friendly reasoning for every prediction, ensuring stakeholders understand the "why" behind the risk.
 #  Dataset Overview
 The platform utilizes a structurally realistic dataset mirroring enterprise Transportation Management System (TMS) exports:
+
 Granularity: Shipment-level (One row = One shipment).
+
 Coverage: 7 Carriers, 4 Modes (Air, Sea, Road, Rail), 40+ Global Routes.
+
 Volume: 200,000 records.
